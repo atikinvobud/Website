@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Maket2</title>
+    <link rel="stylesheet" href="maket2.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Разработка веб-приложения</h1>
+        <p>Заполните форму и мы свяжемся с вами в ближайшее время для уточнения деталей</p>
+        <form id="Contactform">
+          <div class="text">
+            <label for="name">Как вас зовут</label>
+            <input type="text" id="name" name="name" placeholder="например Иванов Иван Иванович" required>
+          </div>
+          <div class="text">
+            <label for="mail">Ваш e-mail</label>
+            <input type="email" id="mail" name="mail" placeholder="test@mail.ru" required>
+          </div>
+          <div class="text">
+            <label for="phone">Телефон</label>
+            <input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="text">
+            <label for="country">Страна</label>
+            <select id="country" name="country" required>
+              <option value="russia" selected>Россия</option>
+              <option value="usa">США</option>
+              <option value="germany">Германия</option>
+              <option value="china">Китай</option>
+            </select>
+          </div>
+          <div class="text">
+            <label for="data">Дата</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          <div class="text">
+            <label for="text">Комментарий</label>
+            <textarea id="text" name="text" rows="5" cols="20"></textarea>
+          </div>
+          <div class="box">
+            <input type="checkbox" id="subscribe" name="subscribe" required>
+            <label for="subscribe">Согласен на обработку моих персональных данных</label>
+          </div>
+          <button type="submit" class="closeModal">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+    <header>
+      <div id="top">
+      <div>
+      <img src="pic.png" alt="">
+      <figcaption>Logo</figcaption>
+      </div>
+      <div>
+        <div>Группа ЭФБО-01-23</div>
+        <div>Дубов Никита Сергеевич</div>
+      </div>
+    </div>
+    <nav>
+      <a href="maket1.html">Главная</a>
+      <a href = "1semestr.html">Первый семестр</a>
+      <a href = "#">Второй семестр</a>
+      <a href="maket2.html">Услуги</a>
+      <a href = "#">Авторизация</a>
+    </nav>
+  </header>
+    <main>
+      <aside>
+        <p>Навигация по странице</p>
+        <div><a href="#veb">Разработка веб приложений</a></div>
+      </aside>
+      <div class="all" id="veb">
+        <h4>Разработка веб-приложений</h4>
+        <div class="type1">
+          <figure>
+            <img src="kr.png" alt="" >
+            <figcaption>Сайт-Визитка</figcaption>
+            <button id="openModal1">Заказать</button>
+          </figure>
+          <br />
+          <figure>
+          <img src="corporation.png" alt="">
+            <figcaption>Корпоративный сайт</figcaption>
+            <button id="openModal2">Заказать</button>
+          </figure>
+          <br />
+          <figure>
+            <img src="online.png" alt="">
+            <figcaption>Интернет магазин</figcaption>
+            <button id="openModal3">Заказать</button>
+          </figure>
+        </div>
+        <div class="allIN">
+          <p>
+            Фронтенд (или клиентская часть) — это то, что видит пользователь. Он
+            включает в себя все визуальные элементы веб-сайта или приложения:
+            кнопки, формы, изображения и текст. Фронтенд разработчики используют
+            языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы
+            создавать интерактивные и привлекательные интерфейсы. Основная задача
+            фронтенда - обеспечить удобство использования и эстетическую
+            привлекательность.
+          </p>
+          <p>
+              Слишком много текста про бэкенд
+          </p>
+      </div>
+      </div>
+    </main>
+    <footer>
+        <h4> Спасибо за просмотр сайта</h4>
+        <div>
+          <a href="#"><img src ="tg.png" alt=""></a>
+          <a href="https://vk.com/feed" target="_blank"><img src ="vk.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="modalform.js"></script>
+  </body>
+</html>

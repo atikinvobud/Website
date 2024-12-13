@@ -1,0 +1,270 @@
+aside a{
+    text-decoration: none;
+}
+aside a:link{
+    color: green;
+}
+aside a:visited{
+    color: green;
+}
+aside a:hover{
+    color:red;
+}
+aside a:active{
+    color:red;
+}
+aside a:focus{
+    color:red;
+}
+.type1 figure:hover
+{
+    transform: scale(1.1);
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left:0;
+    top:0;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid black;
+    align-items: center;
+}
+main{
+    background-color: rgb(251, 224, 234);
+    border: 3px solid black;
+    border-top: none;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cae5ee;
+    border: 1px solid #888;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+  
+@media screen and (max-width:700px) {
+    main{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .type1{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+        flex-direction: column
+    }
+    .type1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow:
+       -10px -10px 1px -2px rgba(160,82,45,.5),
+       -10px 10px 1px -2px rgba(0,255,255,.5),
+       10px -10px 1px -2px rgba(255,0,0,.5),
+       10px 10px 1px -2px rgba(255,255,0,.5);
+    }
+    button{
+        margin-top: 5px;
+        width: 145px;
+        border-radius: 10px;
+        width: 60%;
+        height: auto;
+        cursor: pointer;
+    }
+    .all h4{
+        font-size: 20px;
+        font-family: Cambria;
+        font-weight: 550;
+    }
+    main p{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        text-indent: 10px;
+    }
+    
+    .modal h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .modal p{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px ;
+        font-size: 16.5px;
+    }
+    .modal-content {
+        gap: 10px;
+        margin: 10% auto; 
+        padding: 15px;
+        width: 80%; 
+        height: auto;
+    }
+    .text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    input{
+        width: 45%;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .closeModal{
+        height: 30px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    #Contactform{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+@media screen and (min-width:700px) {
+    main{
+        font-size: 3.5vw;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vmax;
+    }
+    aside p{
+        margin-left: 10%;
+        margin-top: 10px;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 2.6vw;
+    }
+    figure{
+        margin: 20px;
+    }
+    figcaption{
+        text-align: center;
+        font-size: 3vw;
+    }
+    aside div{
+        font-size: 2.4vw;
+        margin-left: 2vmax;
+    }
+    .type1{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 1vw;
+        flex-direction: row;
+    }
+    .type1 img{
+        width: 100%;
+        height: 20vw;
+        border-radius: 15px;
+        box-shadow:
+       -10px -10px 1px -2px rgba(160,82,45,.5),
+       -10px 10px 1px -2px rgba(0,255,255,.5),
+       10px -10px 1px -2px rgba(255,0,0,.5),
+       10px 10px 1px -2px rgba(255,255,0,.5);
+    }
+    button{
+        margin-top: 1.5vmax;
+        width: 80%;
+        border-radius: 10px;
+        height: 5vw;
+        cursor: pointer;
+    }
+    .modal h1{
+        text-align: center;
+        font-size: 3vw;
+    }
+    .modal p{
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 2% ;
+        font-size: 2.2vw;
+    }
+    .modal-content {
+        margin: 2% auto; 
+        padding: 15px;
+        width: 80%; 
+        height: auto;
+    }
+    .text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5%;
+    }
+    input{
+        width: 70%;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    label{
+        font-size: 1.8vw;
+    }
+    .closeModal{
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    #Contactform{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .allIN{
+        text-indent:25px;
+        font-size: 2.5vw;
+        margin-left: 3%;
+    }
+}

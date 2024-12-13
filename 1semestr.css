@@ -1,0 +1,158 @@
+aside a{
+    text-decoration: none;
+}
+aside a:link{
+    color: green;
+}
+aside a:visited{
+    color: green;
+}
+aside a:hover{
+    color:red;
+}
+aside a:active{
+    color:red;
+}
+aside a:focus{
+    color:red;
+}
+td{
+    text-align: left;
+    text-align: center;
+}
+td:hover{
+    transform: scale(1.15);
+}
+tr:hover{
+    background-color: rgb(153, 243, 243);
+    transform: scale(1);
+}
+.gray{
+    background-color: rgb(184, 183, 183);
+}
+.white{
+    background-color:rgb(188, 171, 220);
+}
+main{
+    border: 3px solid black;
+    border-top: none;
+}
+.mainmain{
+    background-color: rgb(218, 251, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 3px solid black;
+}
+.semestr{
+    text-align: center;
+    width: 50%;
+    height: 3%;
+}
+caption{
+    font-family: Arial;
+    font-weight: 550;
+}
+iframe{
+    border:3px solid black;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: 3px solid black;
+}
+#practice {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+#practice.visible {
+    display: table;
+    opacity: 1;
+}
+@media screen and (max-width: 500px)
+{
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    aside{
+        display: none;
+    }
+    .mainmain{
+        padding: 5px;
+    }
+    .mainmain p{
+        font-size: 25px;
+        text-align: center;
+        font-family: Arial;
+        font-weight: 600;
+    }
+    caption{
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    table{
+        margin-bottom: 10px;
+        margin-left:20px;
+        margin-right:20px;
+        width: 90%;
+
+    }
+    .mainmain iframe{
+        margin: 10px;
+        width: 90%;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(236, 214, 214);
+        gap: 2vmax;
+    }
+    aside p{
+        margin-left: 10%;
+        margin-top: 10px;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 2.6vw;
+    }
+    aside div{
+        font-size: 2.4vw;
+        text-align: center;
+    }
+    .mainmain{
+        padding: 3%;
+    }
+    .mainmain p{
+        font-size: 3vw;
+        text-align: center;
+        font-family: Arial;
+        font-weight: 600;
+    }
+    caption{
+        font-size: 3vw;
+        margin: 3%;
+    }
+    table{
+        margin-bottom: 2%;
+        margin-left: 2%;
+        margin-right:2%;
+        width: 90%;
+    }
+    .mainmain iframe{
+        margin: 3%;
+        width: 90%;
+        height: 50vw;
+    }
+}
